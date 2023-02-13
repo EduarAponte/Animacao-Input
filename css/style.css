@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --fontLato: 'PT Sans', sans-serif;
+    --corBranco: #fff;
+    --corpreto: #000000;
+    --corCinza: #333333;
+    --corAzul: #5c75e4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontLato);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--corCinza);
+}
+.title {
+    position: absolute;
+    color: var(--corBranco);
+    top: 50px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+}
+.container {
+    position: relative;
+    padding: 50px;
+    background-color: var(--corBranco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.48);
+}
+.container .inputBox {
+    position: relative;
+    width: 350px;
+}
+.container .inputBox input {
+    position: relative;
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--corBranco);
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+.container .inputBox span  {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: var(--corCinza);
+    letter-spacing: 0.05em;
+}
+.container .inputBox input:valid ~ span,
+.container .inputBox input:focus ~ span {
+    font-size: 0.85em;
+    transform: translateY(-32px);
+}
+.container .inputBox i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, #16b7ed, #a91c78);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+.container .inputBox input:valid ~ i,
+.container .inputBox input:focus ~ i {
+    height: 100%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.35);
+}
+
+.footer {
+    bottom: 0;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    color: var(--corBranco);
+}
+.footer a {
+    text-decoration: none;
+    color: var(--corBranco);
+    font-weight: 700;
+    font-size: 0.8em;
+}
+.footer a:hover {
+    font-size: 0.82em;
+    color: var(--corAzul);
+}
