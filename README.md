@@ -86,7 +86,7 @@ git clone https://github.com/EduarAponte/Animacao-Input.git
 
 ### Assitir o tutorial
 
-<a href="https://youtu.be/598xAcAEhOE" target="_blank">
+<a href="https://youtu.be/lV8sA8DNmps" target="_blank">
   <img src="assets/to_readme/play.png" 
   alt="Assistir Tutorial no YouTube" width="25%" height="25%" />
 </a>
